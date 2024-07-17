@@ -12,21 +12,28 @@
     <script src="text.js" defer></script> 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="align-items: center; ">
         <div class="container-fluid">
-            <div class="img">
-                <img src="Group 8077.svg" alt="Logo">
-            </div>
-            <a class class="navbar-brand" href="#">
-                <div class="divpara" color ="black">
-                    <p>[Internal]Studio RG Video Chat</p>
+            <div >
+                <div class="img" style='border-right: 1px solid gainsboro; height: 90px;'>
+                    <img src="images/Group 8077.svg" alt="Logo">
                 </div>
-            <p id="date-time" class="ms-auto"></p>
-            </a>
+            </div>
+            <hr>
+            <div class="navbar-brand" style="margin-left: 30px;" >
+                <div class="divpara" color ="black" style="text-decoration: none;">
+                    [Internal]Studio RG Video Chat  
+                </div>
+                <div style="text-decoration: none; margin-left: 11px; margin-top: 10px;">
+                    <div id="date-time" class="ms-auto" >
+                    </div>
+                </div>
+            </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 </ul>
@@ -40,33 +47,64 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-9"></div>
+   <div style=" width:auto; background-color:rgb(238, 244, 244); display: flex;">
+    <img src="images/zoom.jpg" height="500px" width="75%" style="border-radius: 20px; margin: 10px;">
 
-            <div class="col-md-3">
-                <div class="row g-3">
-                <div class="col-1">
-                  <input type="text" class="form-control" placeholder="Participants" aria-label="Participants">
+    <div>
+        <div style="width:400px; background: rgb(255, 251, 251); margin: 5px 0px 0px 0px; display:flex; flex-direction: column; gap: 10px; " >
+            <div style=" display:flex; align-items: center; justify-content: space-between; background-color:rgb(247, 247, 229) ; border-radius: 10px; margin-top: 10px;">
+                <div style="margin: 10px;">
+                    Participant
                 </div>
-                <div class="col-2">
-                  <input type="text" class="form-control" placeholder="Add Participant" aria-label="Add Participant">
+                <div style="border-radius: 10px;  display: flex; align-items: center; justify-content: space-evenly; margin: 10px; background-color: rgb(218, 243, 243); height: 30px; width: 200px;">
+                    <div>
+                        Add Participant 
+                    </div>
+                    <div>
+                        icon
+                    </div>
                 </div>
-                <div class="row"></div>
-
-                
+            </div>
+    
+        <div style="border-radius: 10px; height: 50px; margin: 5px; display: flex; align-items: center; gap: 20px; background-color: rgb(240, 240, 231);">
+            <img src="images/user.jpg" alt="" height="40px" width="40px" style="border-radius: 20px; margin: 2px;">
+            <div>Hello Nandani</div>
             <div>
+                icon1
+            </div><div>
+                icon2
+            </div>
+        </div>
+        <div style="border-radius: 10px; height: 50px; margin: 5px; display: flex; align-items: center; gap: 20px; background-color: rgb(240, 240, 231)">
+            <img src="images/user.jpg" alt="" height="40px" width="40px" style="border-radius: 20px; margin: 2px;">
+            <div>Hello Nandani</div>
+            <div>
+                icon1
+            </div><div>
+                icon2
+            </div>
+        </div>
         </div>
     </div>
-        <div class="footer">
-        <button class="btn btn-light"><i class="fa fa-microphone"></i></button>
-        <button class="btn btn-light"><i class="fa fa-video-camera"></i></button>
-        <button class="btn btn-light"><i class="fa fa-upload"></i></button>
-        <button class="btn btn-danger"><i class="fa fa-lg fa-stop-circle"></i></button>
-        <button class="btn btn-light"><i class="fa fa-commenting-o" aria-hidden="true"></i></button>
-        <button class="btn btn-light"><i class="fa fa-ellipsis-h"></i></button>
-        <button type="button" class="btn btn-danger">End Call</button>
+    <div>
+    </div>
+
+   </div>
+    <div class="footer ">
+        <div style="display: flex; justify-content: flex-end; width: 1050px; gap: 200px; margin-top: 15px;">
+            <div>
+                <button class="btn btn-light" style="border-radius: 30px; "><i class="fa fa-microphone"></i></button>
+                <button class="btn btn-light" style="border-radius: 30px;"><i class="fa fa-video-camera"></i></button>
+                <button class="btn btn-light" style="border-radius: 30px;"><i class="fa fa-upload"></i></button>
+                <button class="btn btn-danger" style="border-radius: 30px;"><i class="fa fa-lg fa-stop-circle"></i></button>
+                <button class="btn btn-light" style="border-radius: 30px;"><i class="fa fa-commenting-o" aria-hidden="true"></i></button>
+                <button class="btn btn-light" style="border-radius: 30px;"><i class="fa fa-ellipsis-h"></i></button>
+            </div>
+            <div>
+                <button type="button" style="border-radius: 20px;" class="btn btn-danger">End Call</button>
+            </div>
         </div>
+    </div>
     
 </body>
 </html>
